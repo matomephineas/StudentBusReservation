@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/ic_baseline_directions_bus_24"
+            android:title="List of buses" />
+        <item
+            android:id="@+id/admin_nav_view_assigned"
+            android:icon="@drawable/ic_baseline_content_paste_24"
+            android:title="Assigned Buses" />
+        <item
+            android:id="@+id/admin_nav_view_destinations"
+            android:icon="@drawable/two_ways"
+            android:title="Destinations" />
+        <item
+            android:id="@+id/admin_nav_view_bookings"
+            android:icon="@drawable/ic_baseline_format_list_numbered_24"
+            android:title="View Bookings" />
+
+    </group>
+</menu>

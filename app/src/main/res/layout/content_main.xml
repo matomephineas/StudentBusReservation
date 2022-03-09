@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/choose_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <DatePicker
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/simpleDatePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/l1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You Selected:  "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/selected_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2022/01/11"
+                        android:textStyle="bold"
+                        android:textColor="@color/purple_500"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/simpleDatePicker"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="Select Destination"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/spinnerFrom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_dropDownHintView="@layout/dropdown_hint_item"
+                            app:ms_hintView="@layout/hint_item"
+                            app:ms_hint="Res"
+                            app:ms_hintColor="#0000FF" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/from"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/spinnerTo"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_dropDownHintView="@layout/dropdown_hint_item"
+                            app:ms_hintView="@layout/hint_item"
+                            app:ms_hint="Campus"
+                            app:ms_hintColor="#0000FF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/timeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/to"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/spinnerTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_dropDownHintView="@layout/dropdown_hint_item"
+                            app:ms_hintView="@layout/hint_item"
+                            app:ms_hintColor="#0000FF" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/book_seat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_background"
+                    android:text="Book a Seat"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

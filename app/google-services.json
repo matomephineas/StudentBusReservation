@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691107619427",
+    "firebase_url": "https://busreservation-71c3b-default-rtdb.firebaseio.com",
+    "project_id": "busreservation-71c3b",
+    "storage_bucket": "busreservation-71c3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691107619427:android:719cf6cdceacfe54734e56",
+        "android_client_info": {
+          "package_name": "com.example.studentbusreservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691107619427-c72qsgbgd3oildabe9hge3pbohbis59b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2U9w6aXn-l38BtcS6BwQfk11z4S51-CU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691107619427-c72qsgbgd3oildabe9hge3pbohbis59b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

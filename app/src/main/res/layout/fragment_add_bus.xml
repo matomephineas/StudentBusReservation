@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    android:minWidth="700dp"
+    tools:context=".Admin.AdminMainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register Bus"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/busName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bus name"
+                android:inputType="text"
+               />
+
+
+            <EditText
+
+                android:id="@+id/regNumber"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registration number"
+                android:inputType="text"
+                />
+
+
+            <EditText
+                android:id="@+id/numSeats"
+              android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="number of seats"
+                android:inputType="phone"
+                android:maxLength="5"
+               />
+        <EditText
+            android:id="@+id/province"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="province"
+
+            />
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/submitBusDetails"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:text="Submit Details"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

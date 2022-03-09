@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add_bus"
+        android:icon="@drawable/ic_baseline_directions_bus_24"
+        android:orderInCategory="100"
+        android:iconTint="@color/black"
+        android:title="Add bus"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_add_school"
+        android:icon="@drawable/ic_baseline_add_business_24"
+        android:orderInCategory="100"
+        android:iconTint="@color/black"
+        android:title="Add bus"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
